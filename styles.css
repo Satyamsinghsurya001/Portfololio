@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #00000020;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3fc1c9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fce806f8;
+}
+
+.btn-download {
+    padding: 10px 20px;
+    background: #ff1493;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-download:hover {
+    background: #ff60bf;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 10%;
+    text-align: left;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 5%;
+}
+
+.hero-text h1 span {
+    color: #3fc1c9;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-text .buttons a {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-hire {
+    background: #3fc1c9;
+    color: #fff;
+}
+
+.btn-hire:hover {
+    background: #35a3a6;
+}
+
+.btn-contact {
+    background: transparent;
+    border: 1px solid #3fc1c9;
+    color: #3fc1c9;
+}
+
+.btn-contact:hover {
+    background: #3fc1c9;
+    color: #fff;
+}
+
+.hero-image {
+    max-width: 30%;
+    animation: fadeInright 1.5s ease-out;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(3px 3px 30px cyan);
+}
+
+.hero-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeInright {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
